@@ -6,6 +6,7 @@ function Psc() {
     let [ww,setWW] = useState('0%')
     let [bgg,setBgg] = useState("")
     let getval = useRef()
+    let [forstength,setForstrength] = useState('weak')
 
     function typechanger(){
         if (typo == "password") {
@@ -39,7 +40,7 @@ function Psc() {
             <section className=' bg-zinc-800 w-[170px] h-[7px] rounded-lg'>
                 <div className=' h-[inherit] rounded' style={{width:ww,backgroundColor:bgg,transition:"0.5s"}}></div>
             </section>  
-            <p>strength</p>
+            <p>{forstength}</p>
         </div>
 
     </div>
